@@ -1,0 +1,12 @@
+CREATE TABLE day_trend(
+stock_code VARCHAR2(6),
+trans_day date NOT NULL,
+end_price number(10) NOT NULL,
+start_price number(10) NOT NULL,
+high_price number(10) NOT NULL,
+low_price number(10) NOT NULL,
+trans_quantity number(20) NOT NULL,
+agency_net_sales number(10) NOT NULL,
+foreigner_net_sales number(10) NOT NULL,
+CONSTRAINT PK_day_trend PRIMARY KEY(stock_code,trans_day)
+);
